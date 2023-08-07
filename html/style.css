@@ -1,0 +1,60 @@
+span {
+    color: #006cbb;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin: 10rem 10rem;
+}
+
+.sub-container {
+    display: flex;
+    align-items: center;
+}
+
+.sub-container>p {
+    margin-left: 15px;
+}
+
+button {
+    background: linear-gradient(261.28deg, #ff9417 18.17%, #ff8017 84.69%);
+    color: white;
+    font-weight: 700;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    margin-top: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        margin: 1rem 1rem;
+    }
+
+    .box-img {
+        display: none;
+    }
+}
+
+h2{
+    text-align: center;
+}
+
+.card-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    margin: 0 10rem;
+}
+
+.card{
+    border: 1px solid gray;
+    padding: 2rem;
+}
+
+.card:hover {
+    border: 2px solid blue;
+}

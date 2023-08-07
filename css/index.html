@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS</title>
+    <style>
+        h1{
+            color: #006cbb;
+        }
+        .btn-daftar{
+            background-color: #0977be;
+            color: white;
+            padding: 10px 20px;
+            font-weight: 900;
+            border: none;
+            border-radius: 5px;
+        }
+        #btn-masuk{
+            background-color:white;
+            color: #0977be;
+            padding: 10px 20px;
+            font-weight: 900;
+            border: 1px solid #0977be;
+            border-radius: 5px;
+        }
+        .container{
+            background-image: url('https://arkademi.com/_next/static/media/bg-container.ebe0c1e0.webp');
+            padding: 2rem;
+        }
+        .sub-container{
+            text-align: right;
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5rem;
+        }
+        h2{
+            text-align: center;
+        }
+        .card{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 2rem;
+        }
+        .sub-card{
+            border-bottom-width: 1px;
+            border-bottom-color: gray;
+            border-bottom-style: solid;
+            border-left-width: 1px;
+            border-left-color: gray;
+            border-left-style: solid;
+            padding: 20px;
+        }
+        .box-blue{
+            background-color: #006cbb;
+            height: 100px;
+            width: 100px;
+            /* transition: height 2s, width 2s, background-color 2s, border 2s ; */
+            /* transition: all 2s ;
+            transition-delay: 2s; */
+            animation: animasiKotak 2s ease 2 alternate forwards running ;
+        }
+
+        /* .box-blue:hover{
+            height: 350px;
+            width: 350px;
+            background-color: olive;
+            border: 2px solid black;
+        } */
+
+        @keyframes animasiKotak {
+            form{
+                background-color: #006cbb;
+                height: 100px;
+                width: 100px;
+            }
+            to{
+               height: 350px;
+                width: 350px;
+                background-color: olive;
+                border: 2px solid black; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <img src="https://www.hdwallpapers.in/download/red_roses_petals_flowers_background_hd_flowers-HD.jpg" /> -->
+    <div class="box-blue"></div>
+    <!-- <h1>Tingkatkan Karier Profesionalmu</h1>
+    <button class="btn-daftar">Daftar</button>
+    <button id="btn-masuk">Masuk</button>
+    <div class="btn-daftar">Kursus Online</div> -->
+
+    <div class="container">
+        <div class="box">
+            <div class="sub-container">
+                <h3>Fleksibilitas waktu belajar</h3>
+                <p>Belajar 100% online lewat video ajar kualitas tinggi di platform pendidikan vokasi terbaik di Indonesia. Belajar kapan saja dan dimana saja.</p>
+            </div>
+            <div>
+                <img src="https://arkademi.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fflek.b6161662.webp&w=828&q=75" />
+            </div>
+        </div>
+        <div class="box">
+            <div>
+                <img src="https://arkademi.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fapp-web.ebf2ea6d.webp&w=828&q=75" />
+            </div>
+            <div class="sub-container">
+                <h3>Tersedia di mobile app dan web</h3>
+                <p>Belajar melalui perangkat apapun yang ada di tanganmu. Akses yang mulus dan tersinkronisasi sempurna.</p>
+            </div>
+        </div>
+    </div>
+    <h2>Kategori Terpopuler</h2>
+    <div class="card">
+        <div class="sub-card">
+            <img src="https://arkademi.com/_next/image?url=https%3A%2F%2Fd19izmiuoyzsz.cloudfront.net%2Fimages%2FP22lk6BIZ7KMQkNaNdN4Njd4JWwwzROwzoaeNQDV.png&w=48&q=75" />
+            <h3>Sertifikasi</h3>
+            <p>Persiapan sertifikasi ahli mulai dari K3, ISO, Brevet Pajak, hingga HR untuk profesional.</p>
+        </div>
+        <div class="sub-card">
+            <img
+                src="https://arkademi.com/_next/image?url=https%3A%2F%2Fd19izmiuoyzsz.cloudfront.net%2Fimages%2FP22lk6BIZ7KMQkNaNdN4Njd4JWwwzROwzoaeNQDV.png&w=48&q=75" />
+            <h3>Sertifikasi</h3>
+            <p>Persiapan sertifikasi ahli mulai dari K3, ISO, Brevet Pajak, hingga HR untuk profesional.</p>
+        </div>
+        <div class="sub-card">
+            <img
+                src="https://arkademi.com/_next/image?url=https%3A%2F%2Fd19izmiuoyzsz.cloudfront.net%2Fimages%2FP22lk6BIZ7KMQkNaNdN4Njd4JWwwzROwzoaeNQDV.png&w=48&q=75" />
+            <h3>Sertifikasi</h3>
+            <p>Persiapan sertifikasi ahli mulai dari K3, ISO, Brevet Pajak, hingga HR untuk profesional.</p>
+        </div>
+        <div class="sub-card">
+            <img
+                src="https://arkademi.com/_next/image?url=https%3A%2F%2Fd19izmiuoyzsz.cloudfront.net%2Fimages%2FP22lk6BIZ7KMQkNaNdN4Njd4JWwwzROwzoaeNQDV.png&w=48&q=75" />
+            <h3>Sertifikasi</h3>
+            <p>Persiapan sertifikasi ahli mulai dari K3, ISO, Brevet Pajak, hingga HR untuk profesional.</p>
+        </div>
+        <div class="sub-card">
+            <img
+                src="https://arkademi.com/_next/image?url=https%3A%2F%2Fd19izmiuoyzsz.cloudfront.net%2Fimages%2FP22lk6BIZ7KMQkNaNdN4Njd4JWwwzROwzoaeNQDV.png&w=48&q=75" />
+            <h3>Sertifikasi</h3>
+            <p>Persiapan sertifikasi ahli mulai dari K3, ISO, Brevet Pajak, hingga HR untuk profesional.</p>
+        </div>
+    </div>
+</body>
+</html>

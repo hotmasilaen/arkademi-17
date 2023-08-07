@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Js</title>
+</head>
+<body>
+    <p id="root" class="title"></p>
+    <script>
+        const nama = 'Farhan';
+        let alamat = 'Jakarta';
+        alamat = 'Medan';
+
+        // console.log('Hello world!');
+        console.log(alamat);
+        // alert(alamat);
+        document.getElementById('root').innerHTML = alamat;
+
+        const number1 = 1000; // number
+        const number2 = 1000; // number
+        const hasil = number1 - number2;
+        console.log('Hasil: ' + hasil);
+
+        const string1 = 'Farhan'; // string
+        const string2 = 'farhan'; // string
+        // console.log(string1 == string2);
+        console.log(string1 === string2); 
+
+        const noHp = '+6282187434301';
+        console.log(noHp.slice(3, 14));
+        console.log(noHp.replace('+62', '0'));
+
+        const nilai = 60;
+        // if(nilai > 80){
+        //     console.log('Selamat! kamu lulus.');
+        // }else if (70 < nilai < 80){
+        //     console.log('Kamu Lulus, tingkatkan lagi');
+        // }else{
+        //     console.log('Kamu tidak Lulus.');
+        // }
+
+        switch (nilai) {
+            case 90:
+                console.log('Selamat kamu Lulus');
+                break;
+            case 80:
+                console.log('Kamu Lulus, tingkatkan lagi');
+                break;
+            case 70:
+                console.log('Kamu Lulus');
+                break;
+            default:
+                console.log('Kamu tidak Lulus');
+                break;
+        }
+
+        for(var i = 1; i <= 5; i++){
+            console.log('Number: ' + i); 
+        }
+
+        const fruits = ['Banana', 'Manggo', 'Apple']
+
+        for (var i in fruits){
+            console.log(fruits[i]);
+        }
+
+        const dataSiswa = {
+            nama: 'Farhan',
+            alamat: 'Jakarta',
+            noHp: '0827372392',
+            kodePos: '786387',
+        };
+
+        console.log(dataSiswa.alamat);
+        console.log(dataSiswa['alamat']);
+
+        for (var i in dataSiswa) {
+            console.log(dataSiswa[i]);
+        }
+
+        dataSiswa.alamat = 'Lampung'
+        console.log(dataSiswa.alamat);
+
+        delete dataSiswa.kodePos;
+        console.log(dataSiswa);
+
+        function checkKelulusan(nilai) {
+            if(nilai > 70){
+                return 'Lulus!'
+            }else{
+                return 'Kamu Tidak Lulus.'
+            }
+        }
+
+        // console.log(checkKelulusan(80));
+        // console.log(checkKelulusan(65));
+    </script>
+</body>
+</html>

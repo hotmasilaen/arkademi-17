@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text-y{
+            background-color: yellow;
+            width: fit-content;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            let x = document.forms['myForm']['fname'].value;
+            if(x == ''){
+                alert('Nama harus diisi');
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Alamat</th>
+                <th>No HP</th>
+                <th>Kode pos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Farhan</td>
+                <td>Jakarta</td>
+                <td>0821765764</td>
+                <td>07966</td>
+            </tr>
+            <tr>
+                <td>Susi</td>
+                <td>Lampung</td>
+                <td>45464572342</td>
+                <td>13423</td>
+            </tr>
+        </tbody>
+    </table>
+    <form name="myForm" onsubmit="return validateForm()">
+        Nama: <input type="text" name="fname" />
+        <input type="submit" value="Submit" />
+    </form>
+    <!-- Hari ini belajar HTML -->
+    <a href="https://www.apple.com/id/iphone-14/">Iphone 14</a>
+    <h1>Tingkatkan Karier Profesionalmu</h1>
+    <img src="https://png.pngtree.com/background/20230426/original/pngtree-dahlia-hd-wallpaper-free-3d-hd-floral-picture-image_2493742.jpg" alt="background-bunga" />
+    <mark>
+        Lebih dari 500 kursus online dengan sertifikasi resmi untuk para pekerja dan profesional Indonesia dalam meningkatkan karier dan keahlian. Disusun dan diajarkan oleh instruktur ahli berpengalaman dengan pengakuan industri dan lisensi profesi.
+    </mark>
+    <div class="text-y">
+        Lebih dari 500 kursus online dengan sertifikasi resmi untuk para pekerja dan profesional Indonesia dalam meningkatkan karier dan keahlian. Disusun dan diajarkan oleh instruktur ahli berpengalaman dengan pengakuan industri dan lisensi profesi.
+    </div>
+    <div />
+</body>
+</html>
